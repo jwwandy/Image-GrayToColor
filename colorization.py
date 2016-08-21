@@ -100,7 +100,7 @@ if __name__ == '__main__':
 	cv2.namedWindow('colorized image1',cv2.WINDOW_NORMAL)
 	cv2.imshow('colorized image1',color_img)
 	cv2.waitKey(0)
-	cv2.imwrite('./result/house_graphcut_output.jpg',color_img)
+	cv2.imwrite('./house_graphcut_output.jpg',color_img)
 	superColorPixel(test_img, centers)
 
 	#### convert predicted label to image
@@ -114,7 +114,7 @@ if __name__ == '__main__':
 	cv2.imshow('colorized image',color_img)
 	cv2.waitKey(0)
 
-	cv2.imwrite('./result/house_superpixel_output.jpg',color_img)
+	cv2.imwrite('./house_superpixel_output.jpg',color_img)
 
 	#### store colorized image
 	# outFileName = './output/mountain_gray_resized/alpha%d.jpg' % alpha
